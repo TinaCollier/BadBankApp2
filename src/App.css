@@ -3,7 +3,12 @@ body {
   background-color: #d5b39c;
 
 }
+.card {
 
+
+  border: solid #2a4c63;
+  box-shadow: 5px 10px grey;
+}
 .Container {
   content: "";
   top: 0;
@@ -17,11 +22,20 @@ body {
   
 }
 
+.navbar {
+  width: 100%;
+}
+.nav.nav-tabs {
+  background-color: #d5b39c;
+
+  border: solid #2a4c63;
+  box-shadow: 5px 10px grey;
+}
 .nav.nav-tabs .nav-link {
   color: #2a4c63;
-  border: solid #d5b39c;
+  
 }
 
 .nav.nav-tabs .nav-link.active {
- background-color: #9cc4d5;
+ background-color: blue;
 }
