@@ -1,14 +1,26 @@
 body {
-  
+  font-family: 'Nunito', sans-serif;
   background-color: #d5b39c;
 
 }
 .card {
-
-
-  border: solid #2a4c63;
-  box-shadow: 5px 10px grey;
+  border-style: outset;
+  background-color: #cec5bf;
+  top: 150px;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  border: 2mm ridge #6d8995;
+  
 }
+
+.card-header {
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: 'Cinzel', serif;
+}
+
+
 .Container {
   content: "";
   top: 0;
@@ -19,23 +31,42 @@ body {
   background-image: url("../public/background.jpg");
   background-size: cover;
   filter: sepia(50%);
-  
 }
 
+.container {
+  align-items: stretch;
+  
+}
 .navbar {
-  width: 100%;
-}
-.nav.nav-tabs {
-  background-color: #d5b39c;
 
-  border: solid #2a4c63;
-  box-shadow: 5px 10px grey;
-}
-.nav.nav-tabs .nav-link {
-  color: #2a4c63;
-  
+  padding: 0;
+  font-size: 1.25rem;
+  border-radius: 7.5px;
+  background-color: #cec5bf;
+  border: solid #d5b39c;
 }
 
-.nav.nav-tabs .nav-link.active {
- background-color: blue;
+.container-fluid {
+
+  border: 2mm ridge #6d8995;
+  margin: 0;
+}
+
+#icon {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  padding-left: 0;
+  padding-bottom: 0;
+
+}
+
+
+.nav-item>a:hover {
+  color: white;
+  background-color: #6d8995;
+}
+
+.navbar-nav>.active>a {
+  background-color: #C0C0C0;
+  color: green;
 }

@@ -1,13 +1,16 @@
 //import { useContext } from 'react';
 //import { UserContext } from '../context';
+import Card from '../context';
 
 function AllData(){
-    //const ctx = useContext( UserContext );
-    return (
-        <h1>All Data <br/>
-
-        </h1>
-    );
+    <Card
+        
+    txtcolor="black"
+    header="All Data Page"
+    title="All Data"
+    text="You can use this bank"
+    body={( <img src="./images/family.jpg" className="img-fluid" alt="Responsive image" /> )}
+    />
 }
 
 export default AllData;

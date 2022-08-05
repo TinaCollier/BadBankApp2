@@ -1,6 +1,15 @@
+import Card from '../context';
+
 function Withdraw(){
     return (
-        <h1>Withdraw</h1>
+        <Card
+        
+        txtcolor="black"
+        header="Withdraw Page"
+        title="Withdraw"
+        text="You can use this bank"
+        body={( <img src="./images/family.jpg" className="img-fluid" alt="Responsive image" /> )}
+        />
     );
 }
 
