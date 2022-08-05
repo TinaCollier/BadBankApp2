@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
+import UserContext from '../components/context';
 import validate from '../components/LoginFormValidationRules';
-import Card from '../components/context';
+import Card from '../components/card';
 import useForm from '../components/useForm';
 //import { UserContext } from './components/context';
 
@@ -10,13 +11,13 @@ function CreateAccount(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    //const ctx = useContext(UserContext);
+    const context = useContext(UserContext);
     const {
         values,
         errors,
         handleChange,
         handleSubmit
-    } = useForm( login, validate)
+    } = useForm( login, validate )
     
     function login(){
         console.log('No errors, submit callback called!')
@@ -26,10 +27,8 @@ function CreateAccount(){
     function handleCreate(){
         
         console.log( name, email, password);
-        if (!validate( values.name, 'name' )) return;
-        if (!validate( values.email, 'email' )) return;
-        if (!validate( values.password, 'password' )) return;
-        //ctx.users.push({name,email,password,balance:100}); // issue with this
+        context.users.push({name,email,password,balance:100}); // issue with this
+        console.log('beep', name);
         setShow(false);
     }
 
@@ -73,6 +72,7 @@ function CreateAccount(){
             placeholder="Enter Password" 
             value={ values.password } 
             onChange={ handleChange } required/>
+
             <br/>
             <button 
             type="submit" 

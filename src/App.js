@@ -1,20 +1,23 @@
+import { useContext } from 'react';
 import Nav from './pages/navbar';
 import Deposit from './pages/deposit';
 import Withdraw from './pages/withdraw'
 import AllData from './pages/alldata';
 import CreateAccount from './pages/createaccount';
 import Home from './pages/home'
+import Account from './components/balance';
 import {
     HashRouter,
     Routes,
     Route
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import { UserContext } from './components/context';
-
-
+import UserContext from './components/context';
 import './App.css';
+
 function App(){
+    const context = useContext(UserContext);
+    
     return (
         <div className="Container">
             <HashRouter>
@@ -29,6 +32,7 @@ function App(){
                 
                 </Routes>
             </HashRouter>
+            
         </div>
     );
 }

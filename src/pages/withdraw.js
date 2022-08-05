@@ -1,6 +1,9 @@
-import Card from '../components/context';
+import { useContext } from 'react';
+import UserContext from '../components/context';
+import Card from '../components/card';
 
 function Withdraw(){
+    const context = useContext(UserContext);
     return (
         <Card
         

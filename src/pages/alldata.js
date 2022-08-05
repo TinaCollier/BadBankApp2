@@ -1,16 +1,25 @@
-//import { useContext } from 'react';
-//import { UserContext } from '../context';
-import Card from '../components/context';
-
+import { useContext } from 'react';
+import UserContext from '../components/context';
+import Card from '../components/card';
+import Transactions from '../components/transactions';
+import Account from '../components/balance';
 function AllData(){
-    <Card
-        
-    txtcolor="black"
-    header="All Data Page"
-    title="All Data"
-    text="You can use this bank"
-    body={( <img src="./images/family.jpg" className="img-fluid" alt="Responsive image" /> )}
-    />
+    const context = useContext(UserContext);
+    return (
+        <div>
+        <Card
+        id="alldata"
+        txtcolor="black"
+        header="All Data"
+        title="All Transactions"
+        text="Below you will find all recent transactions. Please contact support if you find any discrepancies."
+        body={( <Transactions /> )}
+        >
+            
+        </Card>
+
+        </div>
+    );
 }
 
 export default AllData;

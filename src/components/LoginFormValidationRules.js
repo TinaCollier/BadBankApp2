@@ -1,4 +1,5 @@
 function validate(values) {
+  console.log('eek', values);
     let errors = {};
     if (!values.name) {
         errors.name = 'Name is required'
