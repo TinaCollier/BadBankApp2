@@ -1,6 +1,6 @@
 //import { useContext } from 'react';
 //import { UserContext } from '../context';
-import Card from '../context';
+import Card from '../components/context';
 
 function AllData(){
     <Card

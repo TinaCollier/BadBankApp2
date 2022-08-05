@@ -34,11 +34,11 @@ body {
 }
 
 .container {
-  align-items: stretch;
-  
+  min-width: 100%;
 }
 .navbar {
-
+  border: 2mm ridge #6d8995;
+  margin: 0;
   padding: 0;
   font-size: 1.25rem;
   border-radius: 7.5px;
@@ -46,11 +46,6 @@ body {
   border: solid #d5b39c;
 }
 
-.container-fluid {
-
-  border: 2mm ridge #6d8995;
-  margin: 0;
-}
 
 #icon {
   font-family: 'Cinzel', serif;

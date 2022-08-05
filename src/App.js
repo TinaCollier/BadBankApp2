@@ -10,7 +10,7 @@ import {
     Route
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import { UserContext } from './context';
+import { UserContext } from './components/context';
 
 
 import './App.css';

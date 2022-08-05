@@ -2,8 +2,9 @@ import CreateAccount from "./createaccount";
 
 function Nav(){
     return(
-        <div className="container">
+        
         <nav className="navbar navbar-expand-lg">
+            <div className="container">
             <div className="container-fluid">
                 <ul className="nav nav-pills">
 
@@ -25,9 +26,10 @@ function Nav(){
                         <a className="nav-link" href="#/alldata/">All Data</a>
                     </li>
                 </ul>
-            </div>
+                </div>
+                </div>
         </nav>
-        </div>
+        
     );
 }
 
